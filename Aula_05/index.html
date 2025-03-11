@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_05</title>
+</head>
+<body>
+    <h1>Principais Formataçoes</h1>
+    <h2><strong>Negrito/Destaque</strong></h2>
+    <p>Esta frase esta <b>em Negrito</b> usando a tag 'b"</p>
+    <p>Esta frase esta em <strong>em Destaque  </strong>usando a tag 'strong'</p>
+    <h2>Italico/Enfase</h2>
+    <p>Esta frase esta <i>em Italico</i> usando a tag 'i'</p>
+    <p>Esta frase esta <em>em Enfase</em> usando a tag 'em'</p>
+    <h2>Texto Marcador</h2>
+    <p>Esta frase esta <mark>com texto marcador</mark> usando a tag mark</p>
+    Esta frase esta <mark style="background: green"> com texto marcador</mark> usando a tag mark
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos usando texto <big>Grande</big> e um texto <small>pequeno</small> usando a tag 'big' e 'small'</p>
+    <h2>Texto deletado</h2>
+    <p>Esta frase esta <del>com o texto deletado</del> usando a tag 'del'</p>
+    <h2>Texto Inserido</h2>
+    <p>Esta frase esta <ins>com o texto destacado inserido</ins> usando a tag 'ins' de forma semantica</p>
+    <p>Esta frase esta <u>com o texto destacado inserido</u> usando a tag 'u' de forma nao semantica</p>
+    <h2>Texto subrescrito</h2>
+    <p>Vamos demostrar uma formula da equaçao do segundo grau ax <sup>2</sup> + bx + c = 0 usando a tag 'sup'</p>
+    <h2>Texto Subescrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a formula da agua h <sub>2</sub>O com a tag 'sub'</p>
+    <h2>Trecho de codigo fonte</h2>
+    <p>neste trecho vou mostrar um trecho de codigo</p>
+    <p>inserindo o comando <code>document.getElementByld('edtCodigo')</code> que é um comando java script</p>
+    <p>Inserindo um codigo me python:</p>
+    <p><pre><code>import pandas as pd
+        import numpy as np
+        
+        # Exemplo de dataframe com valores que são outliers
+        df = pd.DataFrame({
+            'valor': [10, 12, 13, 15, 16, 100, 20, 22, 23, 24]
+        })
+        
+        # Calcular o Q1, Q3 e o IQR
+        Q1 = df['valor'].quantile(0.25)
+        Q3 = df['valor'].quantile(0.75)
+        IQR = Q3 - Q1
+        
+        # Identificar outliers
+        outliers = df[(df['valor'] < (Q1 - 1.5 * IQR)) | (df['valor'] > (Q3 + 1.5 * IQR))]
+        
+        # Remover outliers
+        df_clean = df[~((df['valor'] < (Q1 - 1.5 * IQR)) | (df['valor'] > (Q3 + 1.5 * IQR)))]
+        
+        # Substituir outliers pela mediana
+        mediana = df['valor'].median()
+        df['valor_substituido'] = np.where(
+            (df['valor'] < (Q1 - 1.5 * IQR)) | (df['valor'] > (Q3 + 1.5 * IQR)),
+            mediana,
+            df['valor']
+        )
+        
+        # Exibir resultados
+        print("Outliers identificados:\n", outliers)
+        print("\nDataframe sem outliers:\n", df_clean)
+        print("\nDataframe com outliers substituídos pela mediana:\n", df)
+        </code></pre></p>
+    
+        <h2>Citaçoes (quotation) simples</h2>
+        <p>Segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+        <h2>Citaçoes Completas (Livro)</h2>
+        <p>Segundo Sandra Kussunoki no seu livro A dança e o ventre:
+            <blockquote>
+                Dados existem sobre intervençoes cirurgicas nos corpos contemporaneos visando a obtençao de um corpo mais proximo do padrao estetico tais como lipoaspiraçao de silicone, entre outras. Comprovam a busca obsessiva pelo ideal de perfeiçao
+            </blockquote>
+        </p>
+        <h2>Abreviaçoes</h2>
+        <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+        <H2>Texto Invertivo</H2>
+        <p>Estou estudando HTML</p>
+        <bdo dir="rtl">Estou estudando HTML</bdo>
+    
+
+
+
+
+</body>
+</html>
