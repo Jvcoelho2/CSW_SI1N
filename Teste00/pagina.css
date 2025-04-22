@@ -27,7 +27,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 1rem 4%;
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
@@ -48,10 +48,16 @@ header{
     transform: scale(1.1);
 }
 
+    nav{
+        display: flex;
+        gap: 0rem;
+        padding: 1rem 6%;
+    }
+
 nav a{
     font-size: 1.8rem;
     color: white;
-    margin-left:4rem ;
+    margin-left:3rem ;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom:3px solid transparent ;
@@ -103,7 +109,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #6495ED;
+    background-color: #131416;
 }
 
 .home .home-content h1{
@@ -120,6 +126,7 @@ span{
     font-size: 4rem;
     margin-bottom:1rem ;
     font-weight: 700;
+    
 
 }
 
@@ -155,3 +162,69 @@ span{
     transition: 0.3s ease;
 }
 
+a{
+    text-decoration: none;
+}
+
+footer img{
+    
+        width: 40px;
+        height: 40px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 2px;
+    text-align: center;
+    color: white ;
+}
+p{
+    font-size: 20px;
+    text-align: justify, center;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.github{
+    width: 1px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse ;
+    background-color: white;
+}
+th{
+    background-color: #4169E1;
+    color: #ffffff;
+    padding: 1rem;
+    
+}
+td{
+    color: #331F19; 
+    padding: 1rem;
+    text-align: center;
+}
+tfoot td{
+background-color: #4169E1;
+color: #ffffff;
+}
+th, td{
+    border: 1px solid white;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column; /* um em cima do outro */
+    align-items: center;    /* centraliza horizontalmente */
+    text-align: center;     /* centraliza o texto */
+    gap: 1rem;              /* espaço entre imagem e texto (opcional) */
+}
